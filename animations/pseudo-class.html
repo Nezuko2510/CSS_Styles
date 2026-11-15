@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f2f2f2;
+            line-height: 1.6;
+        }
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        section{
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(0,0,0,0.7);
+        }
+
+        h2{
+           color: #007BFF;
+           border-bottom: 2px solid #eee;
+           padding-bottom: 5px; 
+        }
+
+        .demo-box , ul{
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+
+        /* Pseudo-class styles */
+        .hover-demo:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        .active-demo:active{
+            color: red;
+        }
+
+        .focus-demo:focus{
+            border: 2px solid blue;
+        }
+
+        ul li:first-child{
+            color: white;
+        }
+
+        ul li:last-child{
+            font-weight: bold;
+        }
+
+        ul li:nth-child(odd){
+            background-color: #ed0606;
+        }
+        ul li:nth-child(even){
+            background-color: #08e108;
+        }
+
+        .not-demo:not(.skip){
+            background-color: lightblue;
+        }
+
+        input[type="checkbox"]:checked + label {
+            color: green;
+            font-weight: bold;
+        }
+        button:disabled{
+            background-color: grey;
+            cursor: not-allowed;
+            color: #eee;
+        }
+
+        .empty-box:empty{
+            background-color: pink;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-Classes</h1>
+    <section>
+        <h2>:hover</h2>
+        <div class="demo-box hover-demo"> Hover over me!</div>
+    </section>
+
+    <section>
+        <h2>:active</h2>
+        <button class="active-demo">Click me and hold!</button>
+    </section>
+    <section>
+        <h2>:focus</h2>
+        <input type="text" class="focus-demo" placeholder="Click or tab here" />
+    </section>
+    <section>
+        <h2>:first-child, :last-child, :nth-child</h2>
+        <ul>
+            <li>item 1(first)</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5(last)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>:not()</h2>
+        <div class="demo-box not-demo">i get styled</div>
+        <div class="demo-box not-demo skip">i am skipped</div>
+    </section>
+
+    <section>
+        <h2>:checked</h2>
+        <input type="checkbox" id="check1" />
+        <label for="check1">I a checked</label>
+    </section>
+
+    <section>
+        <h2>:disabled</h2>
+        <button disabled>Disabled button</button>
+    </section>
+
+    <section>
+        <h2>:empty</h2>
+        <div class="demo-box empty-box"></div>
+    </section>
+</body>
+</html>

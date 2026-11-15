@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main{
+            display: grid;
+            padding: 40px;
+            grid-template-columns: 1fr 2fr;
+
+        }
+        .main > div {
+            border: 3px solid white;
+            padding: 20px;
+            background-color: salmon;
+
+        }
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+            height: 150px;
+            font-size: 50px;
+        }
+        .item4{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            height: 150px;
+            font-size: 30px;
+        }
+        .menu , .item3{
+            height: 450px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class = "header">
+        <header> My Header</header>
+        </div>
+        
+        <div class="menu">
+            <a href="#">Link1</a><br>
+            <a href="#">Link2</a><br>
+            <a href="#">Link3</a>
+        </div>
+
+        <div class = "item3">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsa dolorum dignissimos nihil provident dolorem animi eius consequuntur, laudantium sequi voluptates incidunt odio unde reiciendis blanditiis ad dicta molestias? Eaque.</p>
+        </div>
+
+        <div class="item4">
+        <footer> Footer</footer>
+        </div>
+    </div>
+</body>
+</html>

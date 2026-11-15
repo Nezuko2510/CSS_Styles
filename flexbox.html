@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+                font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: burlywood;
+        }
+
+        header{
+            margin:0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: black;
+            width:100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #a1{
+            text-align: left;
+            color: green;
+            flex-grow: 7;
+        }
+
+        .a2 {
+            color: antiquewhite;
+            text-align: right;
+            flex-grow: 1;
+        }
+
+        .main {
+            background-color:blanchedalmond;
+            margin-top: 10px;
+            margin-left:250px;
+            margin-right:250px;
+            padding: 20px;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: 70px;
+            height: 70px;
+            text-align:center;
+
+        }
+
+        h2 {
+            color: blue;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color:rgb(243, 168, 102);
+            justify-content: space-evenly;
+            margin: 10px;
+            padding: 0;
+        }
+        
+        .main2{
+            background-color: rgb(243, 168, 102);
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+        <nav>
+            <a href="#" id="a1">MyBrand</a>
+            <ul>
+            <a href="#home" class = "a2">Home</a>
+            <a href="#about" class="a2">About</a>
+            <a href="#service" class="a2" >Service</a>
+            <a href="#contact" class="a2">Contact</a>
+            </ul>
+        </nav>
+        </header>
+    </div>
+    <div class="main">
+        <h1>Understanding Basic FlexBox</h1>
+        <h2>1.display:flex;(The Magic Start!)</h2>
+        <p>When you put display:flex; on a box, all the things inside it instanly line-up in a row.</p>
+        <div class="container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="main2">
+            <p> Welcome to the home page of Malla Reddy University, Hyderabad. We are committed to providing 
+            quality higher education and fostering innovation in various fields</p>
+        </div>
+    </div>
+</body>
+</html>

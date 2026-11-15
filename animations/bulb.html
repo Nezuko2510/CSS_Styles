@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .thread{
+            position: relative;
+            background-color: gray;
+            height: 5px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .bb {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(192, 50, 50);
+            border-radius: 50%;
+            box-shadow: 0 50px #000;
+            animation: blink 1.5s infinite ease-in-out;
+        }
+        .b1{ animation-delay: 0s;}
+        .b2{ animation-delay: 0.2s;}
+        .b3{ animation-delay: 0.4s;}
+        .b4{ animation-delay: 0.6s;}
+        .b5{ animation-delay: 0.8s;}
+        .b6{ animation-delay: 1.0s;}
+        .b7{ animation-delay: 1.2s;}
+        .b8{ animation-delay: 1.4s;}
+
+        @keyframes blink{
+            0%,100% {
+                background-color: black;
+                box-shadow: 0 0 5px #000;
+            }
+            50% {
+                background-color: red;
+                box-shadow: 0 0  10px 10px red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class= "thread">
+        <div class="bb b1"></div>
+        <div class="bb b2"></div>
+        <div class="bb b3"></div>
+        <div class="bb b4"></div>
+        <div class="bb b5"></div>
+        <div class="bb b6"></div>
+        <div class="bb b7"></div>
+        <div class="bb b8"></div>
+    </div>
+</body>
+</html>

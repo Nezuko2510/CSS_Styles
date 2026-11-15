@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Grid</title>
+  <style>
+    * {
+      font-family: "Papyrus", fantasy;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: sandybrown;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .head {
+      grid-column: 1 / span 2;
+      text-align: center;
+      background-color: beige;
+      padding: 20px;
+    }
+
+    .summary {
+      grid-column: 1 / span 2;
+      text-align: center;
+      margin-top: 10px;
+      background-color: blanchedalmond;
+      padding:10px;
+    }
+
+    .summary h1 {
+      border-bottom: 2px solid black;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .summary p {
+      max-width: 800px;
+      margin: auto;
+      text-align: justify;
+    }
+
+    .left, .right {
+      padding: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid black;
+    }
+
+    .skills ul {
+      padding-left: 20px;
+    }
+
+    .box {
+      margin-bottom: 20px;
+      background-color: antiquewhite;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="head">
+      <h1>Name: Alexander Sanchez</h1>
+    </div>
+
+    <div class="summary">
+      <h1>SUMMARY</h1>
+      <p>
+        Project 2025 is a political initiative to reshape the federal government of the United States
+        and consolidate executive power in favor of right-wing policies. The plan was published in April 2023
+        by The Heritage Foundation, an American conservative think tank, in anticipation of Donald Trump
+        winning the 2024 presidential election.
+      </p>
+    </div>
+
+    <div class="left">
+      <div class="box">
+        <h2>EDUCATION</h2>
+        <p>
+          Education is the transmission of knowledge and skills and the development of character traits. Formal
+          education occurs within a structured institutional framework, such as public schools, following a
+          curriculum. Non-formal education also follows a structured approach but occurs outside the formal
+          schooling system, while informal education involves unstructured learning through daily experiences.
+        </p>
+      </div>
+      <div class="box skills">
+        <h2>SKILLS</h2>
+        <ul>
+          <li>Critical thinking and problem solving</li>
+          <li>Communication and collaboration</li>
+          <li>Adaptability and flexibility</li>
+          <li>Digital literacy</li>
+          <li>Time management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="box">
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+        <p><strong>Software Developer – ABC Tech (2021–2024)</strong><br>
+        Developed scalable web applications using React and Node.js. Collaborated with cross-functional teams to
+        deliver high-quality features and improvements. Mentored junior developers and implemented CI/CD pipelines.</p>
+
+        <p><strong>Intern – XYZ Solutions (2020–2021)</strong><br>
+        Assisted in front-end development and bug fixing for enterprise applications. Gained hands-on experience
+        in agile software development and user interface testing.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .ball{
+           width: 50px;
+           height: 50px;
+           background-color: rgb(177, 8, 8);
+           border-radius: 50%;
+           box-shadow: 0 50px #000;
+           position: relative;
+           animation: jump 1s infinite ease-in-out;
+        }
+
+         @keyframes jump {
+            0% {
+                bottom: 0;
+                transform: scaleY(1);
+            }
+
+            30% {
+                bottom: 100px;
+                transform: scaleY(0.9);
+            }
+
+            50% {
+                bottom: 150px;
+                transform: scaleY(1.1);
+            }
+
+            70% {
+                bottom: 100px;
+                transform: scaleY(0.9);
+            }
+
+            100% {
+                bottom: 0;
+                transform: scaleY(1);
+            }
+         }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

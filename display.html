@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                padding: 10px
+            }
+            .box{
+                border: 2px solid black;
+                background-color:rgb(220, 32, 32);
+                padding: 10px;
+                margin: 5px;
+                font-weight: bold;
+            }
+            .block{
+                display: block;
+            }                
+            
+            .inline{
+                display: inline;
+            }
+            .inline-block{
+                display: inline-block;
+                width: 150px;
+                height: 50px;
+            }
+            .none{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> CSS Display</h1>
+        <hr>
+        <h2>Display - Block</h2>
+        <div class="box block">1. </div>
+        <div class="box block">2</div>
+        <h2> Display - Inline</h2>
+        <div class="box inline">1. Takes height and width how much it need.</div>
+        <div class="box inline">2</div>
+        <h2>Display - Inline-Block</h2>
+        <div class="box inline-block">1. It will be like a inline but we can adjust height and weight</div>
+        <div class="box inline-block">2</div>
+        <h2>Display - None</h2>
+        <div class="box none">1</div>
+        <div class="box none">2</div>
+    </body>
+</html>

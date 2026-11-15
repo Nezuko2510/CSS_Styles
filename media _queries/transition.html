@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .trans{
+            height: 100px;
+            width: 100px;
+            padding: 20px;
+            color: sandybrown;
+            background-color: rgb(141, 37, 37);
+            transition: width 2s, height 2s;
+        }
+
+        div:hover{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Transition Example</h1></div>
+    <div class="trans">Transition Hover</div>
+</body>
+</html>

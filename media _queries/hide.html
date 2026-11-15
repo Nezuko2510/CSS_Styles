@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section{
+            border: 1px solid black;
+            padding: 50px;
+            background-color: plum;
+            height: 90px;
+            width: 40px;
+        }
+
+        @media (max-width: 600px){
+            .section2{
+                display: none;
+            }
+        }
+        @media (min-width: 601px) {
+            .section1{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section section1"></div>
+    <div class="section section2"></div>
+</body>
+</html>

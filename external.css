@@ -1,0 +1,58 @@
+* {
+    font-family: 'Lucida Sans Regular';
+
+}
+head,body{
+    text-align: center;
+    border: 2px solid rgba(140, 9, 9, 0.838);
+
+}
+h2{
+    text-align: left;
+    padding-left: 20px;
+
+}
+.head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(130, 29, 29, 0.89);
+}
+hr {
+    border: 2px solid black;
+}
+.main .head1{
+    color: brown;
+}
+div .para1{
+    background-color: brown;
+}
+#main1  .head2{
+    color: blueviolet;
+}
+.para1,.para2, .para3{
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div .para2{
+    background-color: blueviolet;
+}
+
+.main3 {
+    color: burlywood;
+}
+div .para3{
+    background-color: burlywood;
+}
+
+footer p{
+    text-decoration:solid;
+}
+
+a[href] {
+    font-family: cursive;
+}
+a:hover {
+    color: rgb(51, 186, 10);
+}

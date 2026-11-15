@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OverFlow</title>
+        <style>
+            .box{
+                width: 150px;
+                height: 150px;
+                color: rgb(233, 134, 134);
+                padding: 1rem;
+                border: 2px solid black;
+            }
+            .static {
+                background-color:rgb(0,0,0);
+                position: static;
+            }
+            .relative{
+                background-color:rgb(151, 64, 64);
+                position: relative;
+                top: 20px;
+                left: 20px;
+                z-index: 99;
+            }
+            .absolute{
+                background-color:rgb(96, 73, 73);
+                position: absolute;
+                top: 200px;
+                left: 250px;
+            }
+            .fixed{
+                background-color:rgb(167, 88, 88);
+                position: fixed;
+                top: 0;
+                right:0px;
+                z-index: 99;
+            }
+            .sticky-container{
+                margin-top: 190px;
+                height: 1000px;
+                background-color:rgb(10, 9, 9);
+            }
+            .sticky{
+                background-color:rgb(143, 7, 7);
+                position: sticky;
+                top: 0;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2> CSS Positions </h2>
+        <div class="box static">Static</div>
+        <div class="box relative">Relative</div>
+        <div class="box absolute">Absolute</div>
+        <div class="box fixed">Fixed</div>
+
+        <div class="box sticky-container">
+            <div class="sticky">Sticky Header(Scroll Me!)</div>
+            <p style="padding:20px;">Scroll me to see sticky effect</p>
+        </div>
+    </body>
+</html>
